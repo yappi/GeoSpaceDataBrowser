@@ -1,0 +1,118 @@
+﻿.controlPanel
+{
+    margin-bottom: 20px;
+}
+
+.controlPanel table
+{
+    width: 100%;
+    height: 100%;
+}
+
+.controlPanel td
+{
+    width: 33%;
+    vertical-align: top;
+    padding-bottom: .5em;
+}
+
+.controlPanel select
+{
+    width: 15em;
+    padding: 0.4em;
+}
+
+.controlPanel input[type="text"]
+{
+    padding: 0.4em;
+    width: 12em;
+}
+
+.controlLabel
+{
+    padding-top: 0.5em;
+}
+
+.ui-accordion-content 
+{
+    padding: 1em 1.8em !important;
+}
+
+td.controlLabel
+{
+    text-align: right;
+}
+
+td.controlColumn
+{
+    padding-top: 0.2em;
+    padding-bottom: 0px;
+}
+
+
+td.commandControls
+{
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.applyButton
+{
+    width: 8em;
+}
+
+.dataPlotPanel img
+{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+}
+
+.dataPlotPanel
+{
+    text-align: center;
+}
+
+.controlButtons ul
+{
+    list-style-type: none;
+    padding: 0px;
+    margin: 5px 0px 10px 0px;
+}
+
+.controlButtons li
+{
+    margin-bottom: 10px;
+}
+
+.plotTitle
+{
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+#blur
+{
+    width: 100%;
+    background-color: #8F8F8F;
+    moz-opacity: 0.5;
+    khtml-opacity: .5;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 200;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#progress
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2000;
+}
