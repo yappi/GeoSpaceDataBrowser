@@ -293,3 +293,7 @@ div.accountInfo
     padding-right: 10px;
 }
 
+.Important {
+    font-size: large;
+    color: Red;
+}

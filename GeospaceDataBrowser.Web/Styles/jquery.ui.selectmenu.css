@@ -25,3 +25,8 @@ ul.ui-selectmenu-menu-popup { margin-top: -1px; }
 * html .ui-selectmenu-menu li a { position: relative }
 /* IE7 workaround (opacity disabled) */
 *+html .ui-state-disabled, *+html .ui-state-disabled a { color: silver; }
+
+.Important {
+    font-size: large;
+    color: Red;
+}

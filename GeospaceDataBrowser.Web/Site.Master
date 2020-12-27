@@ -30,13 +30,15 @@
       <div class="loginDisplay">
         <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="False">
           <AnonymousTemplate>
-            [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
+              [<asp:HyperLink ID="Registration" runat="server" NavigateUrl="~/Account/Register.aspx">Registration</asp:HyperLink>
+              ][ <a href="~/Account/Login.aspx" id="HeadLoginStatus0" runat="server">Log In</a>
             ]
           </AnonymousTemplate>
           <LoggedInTemplate>
             Welcome <span class="bold">
               <asp:LoginName ID="HeadLoginName" runat="server" />
-            </span>! [
+            </span>! [<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Account/PersonalPage.aspx">PersonalPage</asp:HyperLink>
+              ][
             <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out"
               LogoutPageUrl="~/" />
             ]

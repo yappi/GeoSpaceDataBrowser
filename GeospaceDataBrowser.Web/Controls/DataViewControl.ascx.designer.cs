@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GeospaceDataBrowser.Web.Controls {
-    
-    
-    public partial class DataViewControl {
-        
+namespace GeospaceDataBrowser.Web.Controls
+{
+
+
+    public partial class DataViewControl
+    {
+
         /// <summary>
         /// DataViewPanel control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel DataViewPanel;
-        
+
         /// <summary>
         /// DataPlotPanel control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel DataPlotPanel;
-        
+
         /// <summary>
         /// NextButton control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button NextButton;
-        
+
         /// <summary>
         /// PreviousButton control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button PreviousButton;
-        
+
         /// <summary>
         /// AddButton control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button AddButton;
-        
+
         /// <summary>
         /// RemoveButton control.
         /// </summary>
@@ -65,7 +67,16 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button RemoveButton;
-        
+
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+
         /// <summary>
         /// DataTitleLiteral control.
         /// </summary>
@@ -74,7 +85,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal DataTitleLiteral;
-        
+
         /// <summary>
         /// DataPlot control.
         /// </summary>
@@ -83,7 +94,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image DataPlot;
-        
+
         /// <summary>
         /// ControlUpdatePanel control.
         /// </summary>
@@ -92,7 +103,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel ControlUpdatePanel;
-        
+
         /// <summary>
         /// PlaceHolder control.
         /// </summary>
@@ -101,7 +112,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PlaceHolder;
-        
+
         /// <summary>
         /// ObservatoryLabel control.
         /// </summary>
@@ -110,7 +121,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ObservatoryLabel;
-        
+
         /// <summary>
         /// ObservatoryDropDown control.
         /// </summary>
@@ -119,7 +130,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ObservatoryDropDown;
-        
+
         /// <summary>
         /// InstrumentLabel control.
         /// </summary>
@@ -128,7 +139,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label InstrumentLabel;
-        
+
         /// <summary>
         /// InstrumentDropDown control.
         /// </summary>
@@ -137,7 +148,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList InstrumentDropDown;
-        
+
         /// <summary>
         /// DataTypeLabel control.
         /// </summary>
@@ -146,7 +157,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label DataTypeLabel;
-        
+
         /// <summary>
         /// DataTypeDropDown control.
         /// </summary>
@@ -155,7 +166,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DataTypeDropDown;
-        
+
         /// <summary>
         /// DateLabel control.
         /// </summary>
@@ -164,7 +175,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label DateLabel;
-        
+
         /// <summary>
         /// FromDateLabel control.
         /// </summary>
@@ -173,7 +184,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label FromDateLabel;
-        
+
         /// <summary>
         /// DateTimeText control.
         /// </summary>
@@ -182,7 +193,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox DateTimeText;
-        
+
         /// <summary>
         /// FromDateText control.
         /// </summary>
@@ -191,7 +202,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox FromDateText;
-        
+
         /// <summary>
         /// JsDateTimeFormat control.
         /// </summary>
@@ -200,7 +211,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField JsDateTimeFormat;
-        
+
         /// <summary>
         /// NetDateTimeFormat control.
         /// </summary>
@@ -209,7 +220,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField NetDateTimeFormat;
-        
+
         /// <summary>
         /// ToDateLabel control.
         /// </summary>
@@ -218,7 +229,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ToDateLabel;
-        
+
         /// <summary>
         /// ToDateText control.
         /// </summary>
@@ -227,7 +238,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ToDateText;
-        
+
         /// <summary>
         /// YRangeFromLabel control.
         /// </summary>
@@ -236,7 +247,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label YRangeFromLabel;
-        
+
         /// <summary>
         /// YRangeFromText control.
         /// </summary>
@@ -245,7 +256,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox YRangeFromText;
-        
+
         /// <summary>
         /// YRangeToLabel control.
         /// </summary>
@@ -254,7 +265,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label YRangeToLabel;
-        
+
         /// <summary>
         /// YRangeToText control.
         /// </summary>
@@ -263,7 +274,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox YRangeToText;
-        
+
         /// <summary>
         /// ApplyButton control.
         /// </summary>
@@ -272,7 +283,7 @@ namespace GeospaceDataBrowser.Web.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ApplyButton;
-        
+
         /// <summary>
         /// AccordionState control.
         /// </summary>

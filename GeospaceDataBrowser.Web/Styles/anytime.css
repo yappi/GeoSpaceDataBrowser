@@ -772,6 +772,10 @@ div.AnyTime-win
   border:1px dashed black;
 }
 
+.Important {
+    font-size: large;
+    color: Red;
+}
 /*
  *  END OF FILE
  */

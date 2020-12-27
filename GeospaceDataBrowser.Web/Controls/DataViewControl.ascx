@@ -17,18 +17,21 @@
           </li>
         </ul>
       </div>
-      <div class="controlButtons" style="float: right;">
+      <div class="controlButtons" style="float: right; margin-left: 16px;">
         <ul>
           <li>
             <asp:Button ID="AddButton" Text="<%$ Resources:LocalizedText, AddButton%>" runat="server"
               CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
-              OnClick="AddButton_Click"></asp:Button>
+              OnClick="AddButton_Click" Width="142px"></asp:Button>
           </li>
           <li>
             <asp:Button ID="RemoveButton" Text="<%$ Resources:LocalizedText, RemoveButton%>"
               runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
-              OnClick="RemoveButton_Click"></asp:Button>
+              OnClick="RemoveButton_Click" Width="144px"></asp:Button>
           </li>
+            <li>
+                <asp:Button ID="Button1" runat="server" Text="Download Data" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="margin-left: 0px" Width="145px"/>
+            </li>
         </ul>
       </div>
       <h1 class="plotTitle">
