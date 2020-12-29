@@ -4,8 +4,11 @@
     using System.Collections.Generic;
     using System.Collections.Specialized;
     using System.Globalization;
+    using System.IO;
     using System.Linq;
+    using System.Net;
     using System.Threading;
+    using System.Threading.Tasks;
     using System.Web;
     using System.Web.UI;
     using System.Web.UI.WebControls;
@@ -287,6 +290,72 @@
             this.DateTimeText.Visible = !customizationControlVisible;
         }
 
+        private void DownloadData(int observatoryId, int instrumentId, int dataTypeId, DateTime dateTime)
+        {
+            int fileFound = 0;
+            try
+            {
+                using (Stream downloadStream = Repository.GetData(observatoryId, instrumentId, dataTypeId, dateTime))
+                {
+                    var list = Repository.GetDataToDownload(observatoryId, instrumentId, dataTypeId, dateTime);
+                    string[] allFiles = Directory.GetFiles(list[0]);
+                    foreach (var item in allFiles)
+                    {
+                        if (item.Contains(list[1]))
+                        {
+                            if (!item.Contains(".jpg") && !item.Contains(".png") && !item.Contains(".bmp"))
+                            {
+                                fileFound++;
+                                FileInfo file = new FileInfo(item);
+                                Response.Clear();
+                                Response.AddHeader("Content-Disposition", "attachment; filename=" + file.Name);
+                                Response.AddHeader("Content-Length", file.Length.ToString());
+                                Response.ContentType = "multipart/form-data";
+                                Response.Flush();
+                                Response.TransmitFile(file.FullName);
+                                Response.End();
+                            }
+
+                        }
+                    }
+                    string path = list[0].Substring(0, list[0].LastIndexOf("\\"));
+                    string[] allFilesUpDir = Directory.GetFiles(path);
+                    foreach (var item in allFilesUpDir)
+                    {
+                        if (item.Contains(list[1]))
+                        {
+                            if (!item.Contains(".jpg") && !item.Contains(".png") && !item.Contains(".bmp"))
+                            {
+                                fileFound++;
+                                FileInfo file = new FileInfo(item);
+                                Response.Clear();
+                                Response.AddHeader("Content-Disposition", "attachment; filename=" + file.Name);
+                                Response.AddHeader("Content-Length", file.Length.ToString());
+                                Response.ContentType = "multipart/form-data";
+                                Response.Flush();
+                                Response.TransmitFile(file.FullName);
+                                Response.End();
+                            }
+
+                        }
+                    }
+
+                    if (fileFound == 0)
+                    {
+                        ActionStatus.Text = string.Format("Data not found or data has not been loaded yet");
+                    }
+                }
+            }
+            catch
+            {
+                ActionStatus.Text = string.Format("Data not found or data has not been loaded yet");
+            }
+            
+        }
+                    
+
+
+
         /// <summary>
         /// Updates image controls.
         /// </summary>
@@ -307,7 +376,6 @@
             this.DataPlot.ImageUrl = string.Format("{0}/Controls/ImageHandler.ashx?{1}",
                 this.Request.ApplicationPath.TrimEnd('/'),
                 queryCollection);
-
             // Update data plot description.
             DataType dataType = Repository.DatatTypes.Where(t => t.Id == dataTypeId).FirstOrDefault();
             this.DataTitleLiteral.Text = dataType != null ? dataType.Description : LocalizedText.NotAvailable;
@@ -373,5 +441,21 @@
         }
 
         #endregion Nested classes
+
+        protected void DownloadAnonymous_Click(object sender, EventArgs e)
+        {
+            ActionStatus.Text = string.Format("You do not have access to download data. Register to download data");
+        }
+
+        protected void DownloadLogIn_Click(object sender, EventArgs e)
+        {
+            ActionStatus.Text = string.Format("You do not have access to download data. Сontact the administrator");
+        }
+
+        protected void DownloadVerified_Click(object sender, EventArgs e)
+        {
+            DownloadData(this.ObservatoryId, this.InstrumentId, this.DataTypeId, this.DateTime);
+        }
+
     }
 }

@@ -71,9 +71,9 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Controls\ConstructorControl.ascx" />
     <Content Include="Controls\DataViewControl.ascx" />
+    <Content Include="Controls\DownloadPage.aspx" />
     <Content Include="Images\nodata.jpg" />
     <Content Include="Roles\CreateUserWizardWithRoles.aspx" />
-    <Content Include="Roles\ManageRoles.aspx" />
     <Content Include="Scripts\anytime.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-migrate.js" />
@@ -150,6 +150,13 @@
     <Compile Include="Controls\ConstructorControl.ascx.designer.cs">
       <DependentUpon>ConstructorControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\DownloadPage.aspx.cs">
+      <DependentUpon>DownloadPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DownloadPage.aspx.designer.cs">
+      <DependentUpon>DownloadPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Data\ControlHelper.cs" />
     <Compile Include="Data\ConstructorMode.cs" />
     <Compile Include="Controls\DataViewControl.ascx.cs">
@@ -180,13 +187,6 @@
     </Compile>
     <Compile Include="Roles\CreateUserWizardWithRoles.aspx.designer.cs">
       <DependentUpon>CreateUserWizardWithRoles.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Roles\ManageRoles.aspx.cs">
-      <DependentUpon>ManageRoles.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Roles\ManageRoles.aspx.designer.cs">
-      <DependentUpon>ManageRoles.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

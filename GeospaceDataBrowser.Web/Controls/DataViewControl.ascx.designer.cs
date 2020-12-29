@@ -24,6 +24,15 @@ namespace GeospaceDataBrowser.Web.Controls
         protected global::System.Web.UI.UpdatePanel DataViewPanel;
 
         /// <summary>
+        /// ActionStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ActionStatus;
+
+        /// <summary>
         /// DataPlotPanel control.
         /// </summary>
         /// <remarks>
@@ -69,13 +78,13 @@ namespace GeospaceDataBrowser.Web.Controls
         protected global::System.Web.UI.WebControls.Button RemoveButton;
 
         /// <summary>
-        /// Button1 control.
+        /// LoginView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.LoginView LoginView1;
 
         /// <summary>
         /// DataTitleLiteral control.

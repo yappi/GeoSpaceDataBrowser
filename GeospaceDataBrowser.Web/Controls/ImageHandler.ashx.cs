@@ -67,6 +67,30 @@
             }
         }
 
+        /*public class DownloadFile : IHttpHandler
+        {
+            public void ProcessRequest(HttpContext context)
+            {
+                System.Web.HttpResponse response = System.Web.HttpContext.Current.Response;
+                response.ClearContent();
+                response.Clear();
+                response.ContentType = "image/png";
+                response.AddHeader("Content-Disposition",
+                                   "attachment; filename=" + fileName + ";");
+                response.TransmitFile(Server.MapPath("FileDownload.csv"));
+                response.Flush();
+                response.End();
+            }
+
+            public bool IsReusable
+            {
+                get
+                {
+                    return false;
+                }
+            }
+        }*/
+
         /// <summary>
         /// Returns a request parameter value if present in the context, otherwise throws exception.
         /// </summary>

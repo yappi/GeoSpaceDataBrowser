@@ -1,7 +1,13 @@
 ﻿<%@ Control ClassName="DataViewControl" Language="C#" AutoEventWireup="true" CodeBehind="DataViewControl.ascx.cs"
   Inherits="GeospaceDataBrowser.Web.Controls.DataViewControl" %>
 <asp:UpdatePanel runat="server" ID="DataViewPanel">
+    <Triggers>        
+        <asp:PostBackTrigger ControlID="LoginView1$DownloadVerified"/>
+    </Triggers>
   <ContentTemplate>
+      <p align="center" style="color:#ff0000"> 
+            <asp:Label ID="ActionStatus" runat="server" CssClass="Important"></asp:Label> 
+      </p>
     <asp:Panel ID="DataPlotPanel" runat="server" CssClass="dataPlotPanel">
       <div class="controlButtons" style="float: left;">
         <ul>
@@ -30,7 +36,22 @@
               OnClick="RemoveButton_Click" Width="144px"></asp:Button>
           </li>
             <li>
-                <asp:Button ID="Button1" runat="server" Text="Download Data" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="margin-left: 0px" Width="145px"/>
+                <asp:LoginView ID="LoginView1" runat="server">
+                    <AnonymousTemplate>
+                        <asp:Button ID="DownloadAnonymous" runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" Enabled="true" style="margin-left: 0px" Text="Download Data" Width="145px" ToolTip="You do not have access to download data. Register to download data" OnClick="DownloadAnonymous_Click" />
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <asp:Button ID="DownloadLogIn" runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" Enabled="true" OnClick="DownloadAnonymous_Click" style="margin-left: 0px" Text="Download Data" ToolTip="You do not have access to download data. Сontact the administrator" Width="145px" />
+                        <br />
+                    </LoggedInTemplate>
+                    <RoleGroups>
+                        <asp:RoleGroup Roles="Administrator, Verified user">
+                            <ContentTemplate>
+                               <asp:Button ID="DownloadVerified" runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" OnClick="DownloadVerified_Click" style="margin-left: 0px" Text="Download Data" Width="145px" /> 
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+                    </RoleGroups>
+                </asp:LoginView>
             </li>
         </ul>
       </div>
@@ -201,4 +222,7 @@
       </ContentTemplate>
     </asp:UpdatePanel>
   </ContentTemplate>
+        <%--<Triggers>
+        <asp:AsyncPostBackTrigger ControlID="DownloadVerified" EventName="DownloadVerified_Click" />
+    </Triggers>--%>
 </asp:UpdatePanel>

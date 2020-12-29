@@ -140,6 +140,34 @@
             return new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read);
         }
 
+        public static List<string> GetDataToDownload(int observatoryId, int instrumentId, int dataTypeId, DateTime date)
+        {
+            List<string> pathAndName = new List<string>();
+            // Get observatory by id.
+            Observatory observatory = Repository.GetObservatory(observatoryId);
+
+            // Get instrument by id.
+            Instrument instrument = Repository.GetInstrument(observatory, instrumentId);
+
+            // Get data type by id.
+            DataType dataType = Repository.GetDataType(instrument.InstrumentType, dataTypeId);
+
+            // Build path to the data file.
+            string filePath = Path.Combine(observatory.RootFolder, string.Format(instrument.InstrumentType.FolderMask, date),
+                string.Format(dataType.FileMask, date, instrument.Number, observatory.Location.First()));
+
+            pathAndName.Add(Path.Combine(observatory.RootFolder, string.Format(instrument.InstrumentType.FolderMask, date)));
+            string[] temp = dataType.FileMask.Split('{', '}');
+            foreach (var item in temp)
+            {
+                if (item.Contains("yy"))
+                {
+                    pathAndName.Add(string.Format("{" + item.Trim(new char[] { 'm', 'H' }) + "}", date));
+                }
+            }            
+            return pathAndName;
+        }
+
         /// <summary>
         /// Gets an observatory by id.
         /// </summary>
