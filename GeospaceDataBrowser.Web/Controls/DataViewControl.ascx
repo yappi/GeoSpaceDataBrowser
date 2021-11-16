@@ -2,7 +2,7 @@
   Inherits="GeospaceDataBrowser.Web.Controls.DataViewControl" %>
 <asp:UpdatePanel runat="server" ID="DataViewPanel">
     <Triggers>        
-        <asp:PostBackTrigger ControlID="LoginView1$DownloadVerified"/>
+        <asp:PostBackTrigger runat="server" ControlID="LoginView1$DownloadVerified"/>
     </Triggers>
   <ContentTemplate>
       <p align="center" style="color:#ff0000"> 
@@ -39,9 +39,11 @@
                 <asp:LoginView ID="LoginView1" runat="server">
                     <AnonymousTemplate>
                         <asp:Button ID="DownloadAnonymous" runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" Enabled="true" style="margin-left: 0px" Text="Download Data" Width="145px" ToolTip="You do not have access to download data. Register to download data" OnClick="DownloadAnonymous_Click" />
+                        <asp:Button ID="DownloadVerified" runat="server" Text="false" Visible="False" Enable="true" />
                     </AnonymousTemplate>
                     <LoggedInTemplate>
                         <asp:Button ID="DownloadLogIn" runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" Enabled="true" OnClick="DownloadAnonymous_Click" style="margin-left: 0px" Text="Download Data" ToolTip="You do not have access to download data. Сontact the administrator" Width="145px" />
+                        <asp:Button ID="DownloadVerified" runat="server" Text="false" Visible="False" Enable="true" />
                         <br />
                     </LoggedInTemplate>
                     <RoleGroups>

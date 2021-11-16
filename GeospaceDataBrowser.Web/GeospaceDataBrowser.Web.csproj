@@ -14,7 +14,7 @@
     <RootNamespace>GeospaceDataBrowser.Web</RootNamespace>
     <AssemblyName>GeospaceDataBrowser.Web</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -71,7 +71,6 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Controls\ConstructorControl.ascx" />
     <Content Include="Controls\DataViewControl.ascx" />
-    <Content Include="Controls\DownloadPage.aspx" />
     <Content Include="Images\nodata.jpg" />
     <Content Include="Roles\CreateUserWizardWithRoles.aspx" />
     <Content Include="Scripts\anytime.js" />
@@ -150,13 +149,6 @@
     <Compile Include="Controls\ConstructorControl.ascx.designer.cs">
       <DependentUpon>ConstructorControl.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\DownloadPage.aspx.cs">
-      <DependentUpon>DownloadPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\DownloadPage.aspx.designer.cs">
-      <DependentUpon>DownloadPage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Data\ControlHelper.cs" />
     <Compile Include="Data\ConstructorMode.cs" />
     <Compile Include="Controls\DataViewControl.ascx.cs">
@@ -230,12 +222,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1418</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost:8080/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
