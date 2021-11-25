@@ -87,6 +87,15 @@ namespace GeospaceDataBrowser.Web.Controls
         protected global::System.Web.UI.WebControls.LoginView LoginView1;
 
         /// <summary>
+        /// LoginView2 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LoginView LoginView2;
+
+        /// <summary>
         /// DataTitleLiteral элемент управления.
         /// </summary>
         /// <remarks>

@@ -140,6 +140,24 @@
             return new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read);
         }
 
+        public static Stream GetShortNames(int observatoryId, int instrumentId, int dataTypeId, DateTime date)
+        {
+            // Get observatory by id.
+            Observatory observatory = Repository.GetObservatory(observatoryId);
+
+            // Get instrument by id.
+            Instrument instrument = Repository.GetInstrument(observatory, instrumentId);
+
+            // Get data type by id.
+            DataType dataType = Repository.GetDataType(instrument.InstrumentType, dataTypeId);
+
+            // Build path to the data file.
+            string filePath = Path.Combine(observatory.RootFolder, string.Format(instrument.InstrumentType.FolderMask, date),
+                string.Format(dataType.FileMask, date, instrument.Number, observatory.Location.First()));
+
+            return new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read);
+        }
+
         public static List<string> GetDataToDownload(int observatoryId, int instrumentId, int dataTypeId, DateTime date)
         {
             List<string> pathAndName = new List<string>();
