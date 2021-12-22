@@ -444,8 +444,8 @@
 
         protected void DownloadAnonymous_Click(object sender, EventArgs e)
         {
-            DownloadData(this.ObservatoryId, this.InstrumentId, this.DataTypeId, this.DateTime);
-            //ActionStatus.Text = string.Format("You do not have access to download data. Register to download data");
+            //DownloadData(this.ObservatoryId, this.InstrumentId, this.DataTypeId, this.DateTime);
+            ActionStatus.Text = string.Format("You do not have access to download data. Register to download data");
         }
 
         protected void DownloadLogIn_Click(object sender, EventArgs e)

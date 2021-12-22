@@ -42,7 +42,7 @@
                         <asp:Button ID="DownloadVerified" runat="server" Text="false" Visible="False" Enable="true" />
                     </AnonymousTemplate>
                     <LoggedInTemplate>
-                        <asp:Button ID="DownloadLogIn" runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" Enabled="true" OnClick="DownloadAnonymous_Click" style="margin-left: 0px" Text="Download Data" ToolTip="You do not have access to download data. Сontact the administrator" Width="145px" />
+                        <asp:Button ID="DownloadLogIn" runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" Enabled="true" OnClick="DownloadLogIn_Click" style="margin-left: 0px" Text="Download Data" ToolTip="You do not have access to download data. Сontact the administrator" Width="145px" />
                         <asp:Button ID="DownloadVerified" runat="server" Text="false" Visible="False" Enable="true" />
                         <br />
                     </LoggedInTemplate>
@@ -58,11 +58,11 @@
             <li>
                 <asp:LoginView ID="LoginView2" runat="server">
                     <AnonymousTemplate>
-                        <asp:Button ID="DownloadDatasetAnonymous" runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" Enabled="true" style="margin-left: 0px" Text="Download Dataset" Width="145px" ToolTip="You do not have access to download data. Register to download data" OnClick="DownloadDatasetVerified_Click" />
+                        <asp:Button ID="DownloadDatasetAnonymous" runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" Enabled="true" style="margin-left: 0px" Text="Download Dataset" Width="145px" ToolTip="You do not have access to download data. Register to download data" OnClick="DownloadAnonymous_Click" />
                         <asp:Button ID="DownloadDatasetVerified" runat="server" Text="false" Visible="False" Enable="true" />
                     </AnonymousTemplate>
                     <LoggedInTemplate>
-                        <asp:Button ID="DownloadDatasetLogIn" runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" Enabled="true" OnClick="DownloadAnonymous_Click" style="margin-left: 0px" Text="Download Dataset" ToolTip="You do not have access to download data. Сontact the administrator" Width="145px" />
+                        <asp:Button ID="DownloadDatasetLogIn" runat="server" CssClass="applyButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" Enabled="true" OnClick="DownloadLogIn_Click" style="margin-left: 0px" Text="Download Dataset" ToolTip="You do not have access to download data. Сontact the administrator" Width="145px" />
                         <asp:Button ID="DownloadDatasetVerified" runat="server" Text="false" Visible="False" Enable="true" />
                         <br />
                     </LoggedInTemplate>

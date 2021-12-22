@@ -33,6 +33,33 @@ namespace GeospaceDataBrowser.Web
         protected global::System.Web.UI.WebControls.Label DowloadDatasetObservatory;
 
         /// <summary>
+        /// FromCalendar элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar FromCalendar;
+
+        /// <summary>
+        /// ToCalendar элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar ToCalendar;
+
+        /// <summary>
+        /// DownloadStatus элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DownloadStatus;
+
+        /// <summary>
         /// DownloadButton элемент управления.
         /// </summary>
         /// <remarks>

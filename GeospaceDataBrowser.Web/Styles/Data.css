@@ -121,3 +121,17 @@ td.commandControls
     font-size: large;
     color: Red;
 }
+
+div.wrapper {
+    width: 450px;
+}
+
+div.left_block {
+    float: left;
+    width: 200px;
+}
+
+div.right_block {
+    float: right;
+    width: 200px;
+}
