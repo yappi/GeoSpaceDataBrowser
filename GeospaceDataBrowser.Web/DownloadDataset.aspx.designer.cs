@@ -18,7 +18,7 @@ namespace GeospaceDataBrowser.Web
         /// Head элемент управления.
         /// </summary>
         /// <remarks>
-        /// Автоматически создаваемое поле.
+        /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Head;
@@ -27,7 +27,7 @@ namespace GeospaceDataBrowser.Web
         /// DowloadDatasetObservatory элемент управления.
         /// </summary>
         /// <remarks>
-        /// Автоматически создаваемое поле.
+        /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label DowloadDatasetObservatory;
@@ -36,7 +36,7 @@ namespace GeospaceDataBrowser.Web
         /// FromCalendar элемент управления.
         /// </summary>
         /// <remarks>
-        /// Автоматически создаваемое поле.
+        /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar FromCalendar;
@@ -45,7 +45,7 @@ namespace GeospaceDataBrowser.Web
         /// ToCalendar элемент управления.
         /// </summary>
         /// <remarks>
-        /// Автоматически создаваемое поле.
+        /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar ToCalendar;
@@ -54,7 +54,7 @@ namespace GeospaceDataBrowser.Web
         /// DownloadStatus элемент управления.
         /// </summary>
         /// <remarks>
-        /// Автоматически создаваемое поле.
+        /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label DownloadStatus;
@@ -63,7 +63,7 @@ namespace GeospaceDataBrowser.Web
         /// DownloadButton элемент управления.
         /// </summary>
         /// <remarks>
-        /// Автоматически создаваемое поле.
+        /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button DownloadButton;

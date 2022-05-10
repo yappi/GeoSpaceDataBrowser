@@ -11,8 +11,8 @@
             <div style="float: left; width: 25%;">
             </div>
             <div style="float: right; width: 75%;">
-            <div><b>From:</b></div>
-            <asp:Calendar ID="FromCalendar" runat="server"></asp:Calendar>
+                <div><b>From:</b></div>
+                <asp:Calendar ID="FromCalendar" runat="server"></asp:Calendar>
             </div>
 
         </div>
@@ -20,8 +20,8 @@
             <div style="float: left; width: 25%;">
             </div>
             <div style="float: right; width: 75%;">
-            <div><b>To:</b></div>
-            <asp:Calendar ID="ToCalendar" runat="server"></asp:Calendar>
+                <div><b>To:</b></div>
+                <asp:Calendar ID="ToCalendar" runat="server"></asp:Calendar>
             </div>
 
         </div>
